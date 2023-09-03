@@ -43,6 +43,9 @@ app.get('/services', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about')
 });
+app.get('/portfolio', (req, res) => {
+    res.render('portfolio')
+});
 
 // Start and listen on the Express server
 app.listen(port, () => {
