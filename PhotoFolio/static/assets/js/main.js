@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileNavHide = document.querySelector('.mobile-nav-hide');
 
   document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
-    el.addEventListener('click', function(event) {
+    el.addEventListener('click', function (event) {
       event.preventDefault();
       mobileNavToogle();
     })
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
 
   navDropdowns.forEach(el => {
-    el.addEventListener('click', function(event) {
+    el.addEventListener('click', function (event) {
       if (document.querySelector('.mobile-nav-active')) {
         event.preventDefault();
         this.classList.toggle('active');
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   const scrollTop = document.querySelector('.scroll-top');
   if (scrollTop) {
-    const togglescrollTop = function() {
+    const togglescrollTop = function () {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
     window.addEventListener('load', togglescrollTop);
@@ -124,6 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+
   /**
    * Init swiper slider with 3 slides at once in desktop view
    */
@@ -156,6 +157,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+
+
   /**
    * Animation on scroll function and init
    */
@@ -172,3 +175,65 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+window.addEventListener('load', () => {
+  let portfolioContainer = select('.portfolio-container');
+  if (portfolioContainer) {
+    let portfolioIsotope = new Isotope(portfolioContainer, {
+      itemSelector: '.portfolio-item',
+      layoutMode: 'fitRows'
+    });
+
+    let portfolioFilters = select('#portfolio-flters li', true);
+
+    on('click', '#portfolio-flters li', function (e) {
+      e.preventDefault();
+      portfolioFilters.forEach(function (el) {
+        el.classList.remove('filter-active');
+      });
+      this.classList.add('filter-active');
+
+      portfolioIsotope.arrange({
+        filter: this.getAttribute('data-filter')
+      });
+    }, true);
+  }
+
+});
+
+
+
+const portfolioLightbox = GLightbox({
+  selector: '.portfolio-lightbox'
+});
+
+/**
+ * Initiate portfolio details lightbox 
+ */
+const portfolioDetailsLightbox = GLightbox({
+  selector: '.portfolio-details-lightbox',
+  width: '90%',
+  height: '90vh'
+});
+
+/**
+ * Portfolio details slider
+ */
+new Swiper('.portfolio-details-slider', {
+  speed: 400,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true
+  }
+});
+
+/**
+ * Initiate Pure Counter 
+ */
+new PureCounter();
+
