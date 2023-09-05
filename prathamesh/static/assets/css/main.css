@@ -1331,3 +1331,7 @@ h6 {
 .footer .credits a {
   color: var(--color-primary);
 }
+
+::placeholder{
+  color: #ffffff;
+}

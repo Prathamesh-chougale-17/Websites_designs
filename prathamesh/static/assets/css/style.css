@@ -1188,3 +1188,7 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+::placeholder{
+  color: #ffffff;
+}
