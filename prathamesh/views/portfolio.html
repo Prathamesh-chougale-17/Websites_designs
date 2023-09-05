@@ -52,15 +52,6 @@
 
     <!-- Template Main CSS File -->
     <link href="../static/assets/css/main.css" rel="stylesheet" />
-    <!-- <link href="../static/assets/css/style.css" rel="stylesheet" /> -->
-
-    <!-- =======================================================
-  * Template Name: PhotoFolio
-  * Updated: Jul 27 2023 with Bootstrap v5.3.1
-  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
 
   <body>
@@ -72,8 +63,7 @@
         <a href="/" class="logo d-flex align-items-center me-auto me-lg-0">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="../static/assets/img/logo.png" alt=""> -->
-          <i class="bi bi-camera"></i>
-          <h1>PhotoFolio</h1>
+          <img src="../static/assets/img/face.png" alt="loding error" />
         </a>
 
         <nav id="navbar" class="navbar">
@@ -85,7 +75,7 @@
                 <h3>Portfolio</h3>
               </a>
             </li>
-            <li><a href="services" class="active">Services</a></li>
+            <li><a href="services">Services</a></li>
             <li><a href="contact">Contact</a></li>
           </ul>
         </nav>
@@ -113,6 +103,18 @@
             target="_blank"
             ><i class="bi bi-linkedin"></i
           ></a>
+          <a
+            href="https://www.codechef.com/users/prathamesh1717"
+            class="codechef"
+            target="_blank"
+            ><i class="bi bi-code"></i
+          ></a>
+          <a
+            href="https://github.com/Prathamesh-chougale-17"
+            class="github"
+            target="_blank"
+            ><i class="bi bi-github"></i
+          ></a>
         </div>
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -120,6 +122,311 @@
     </header>
     <main id="main" data-aos="fade" data-aos-delay="1500">
       <!-- ======= End Page Header ======= -->
+      <div class="page-header d-flex align-items-center">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <section id="portfolio" class="portfolio-mywork">
+              <div class="container">
+                <div class="section-title">
+                  <h2>My Works</h2>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                      <li data-filter="*" class="filter-active">All</li>
+                      <li data-filter=".filter-app">Front-end</li>
+                      <li data-filter=".filter-card">Back-end</li>
+                      <li data-filter=".filter-web">Sanity</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="row portfolio-container">
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                      <img
+                        src="../static/assets/img/portfolio/portfolio-1.jpg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="portfolio-info">
+                        <h4>App 1</h4>
+                        <p>App</p>
+                        <div class="portfolio-links">
+                          <a
+                            href="../static/assets/img/portfolio/portfolio-1.jpg"
+                            data-gallery="portfolioGallery"
+                            class="portfolio-lightbox"
+                            title="App 1"
+                            ><i class="bx bx-plus"></i
+                          ></a>
+                          <a
+                            href="portfolio-details.html"
+                            data-gallery="portfolioDetailsGallery"
+                            data-glightbox="type: external"
+                            class="portfolio-details-lightbox"
+                            title="Portfolio Details"
+                            ><i class="bx bx-link"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                      <img
+                        src="../static/assets/img/portfolio/portfolio-2.jpg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="portfolio-info">
+                        <h4>Web 3</h4>
+                        <p>Web</p>
+                        <div class="portfolio-links">
+                          <a
+                            href="../static/assets/img/portfolio/portfolio-2.jpg"
+                            data-gallery="portfolioGallery"
+                            class="portfolio-lightbox"
+                            title="Web 3"
+                            ><i class="bx bx-plus"></i
+                          ></a>
+                          <a
+                            href="portfolio-details.html"
+                            data-gallery="portfolioDetailsGallery"
+                            data-glightbox="type: external"
+                            class="portfolio-details-lightbox"
+                            title="Portfolio Details"
+                            ><i class="bx bx-link"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                      <img
+                        src="../static/assets/img/portfolio/portfolio-3.jpg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="portfolio-info">
+                        <h4>App 2</h4>
+                        <p>App</p>
+                        <div class="portfolio-links">
+                          <a
+                            href="../static/assets/img/portfolio/portfolio-3.jpg"
+                            data-gallery="portfolioGallery"
+                            class="portfolio-lightbox"
+                            title="App 2"
+                            ><i class="bx bx-plus"></i
+                          ></a>
+                          <a
+                            href="portfolio-details.html"
+                            data-gallery="portfolioDetailsGallery"
+                            data-glightbox="type: external"
+                            class="portfolio-details-lightbox"
+                            title="Portfolio Details"
+                            ><i class="bx bx-link"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                      <img
+                        src="../static/assets/img/portfolio/portfolio-4.jpg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="portfolio-info">
+                        <h4>Card 2</h4>
+                        <p>Card</p>
+                        <div class="portfolio-links">
+                          <a
+                            href="../static/assets/img/portfolio/portfolio-4.jpg"
+                            data-gallery="portfolioGallery"
+                            class="portfolio-lightbox"
+                            title="Card 2"
+                            ><i class="bx bx-plus"></i
+                          ></a>
+                          <a
+                            href="portfolio-details.html"
+                            data-gallery="portfolioDetailsGallery"
+                            data-glightbox="type: external"
+                            class="portfolio-details-lightbox"
+                            title="Portfolio Details"
+                            ><i class="bx bx-link"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                      <img
+                        src="../static/assets/img/portfolio/portfolio-5.jpg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="portfolio-info">
+                        <h4>Web 2</h4>
+                        <p>Web</p>
+                        <div class="portfolio-links">
+                          <a
+                            href="../static/assets/img/portfolio/portfolio-5.jpg"
+                            data-gallery="portfolioGallery"
+                            class="portfolio-lightbox"
+                            title="Web 2"
+                            ><i class="bx bx-plus"></i
+                          ></a>
+                          <a
+                            href="portfolio-details.html"
+                            data-gallery="portfolioDetailsGallery"
+                            data-glightbox="type: external"
+                            class="portfolio-details-lightbox"
+                            title="Portfolio Details"
+                            ><i class="bx bx-link"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                      <img
+                        src="../static/assets/img/portfolio/portfolio-6.jpg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="portfolio-info">
+                        <h4>App 3</h4>
+                        <p>App</p>
+                        <div class="portfolio-links">
+                          <a
+                            href="../static/assets/img/portfolio/portfolio-6.jpg"
+                            data-gallery="portfolioGallery"
+                            class="portfolio-lightbox"
+                            title="App 3"
+                            ><i class="bx bx-plus"></i
+                          ></a>
+                          <a
+                            href="portfolio-details.html"
+                            data-gallery="portfolioDetailsGallery"
+                            data-glightbox="type: external"
+                            class="portfolio-details-lightbox"
+                            title="Portfolio Details"
+                            ><i class="bx bx-link"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                      <img
+                        src="../static/assets/img/portfolio/portfolio-7.jpg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="portfolio-info">
+                        <h4>Card 1</h4>
+                        <p>Card</p>
+                        <div class="portfolio-links">
+                          <a
+                            href="../static/assets/img/portfolio/portfolio-7.jpg"
+                            data-gallery="portfolioGallery"
+                            class="portfolio-lightbox"
+                            title="Card 1"
+                            ><i class="bx bx-plus"></i
+                          ></a>
+                          <a
+                            href="portfolio-details.html"
+                            data-gallery="portfolioDetailsGallery"
+                            data-glightbox="type: external"
+                            class="portfolio-details-lightbox"
+                            title="Portfolio Details"
+                            ><i class="bx bx-link"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                      <img
+                        src="../static/assets/img/portfolio/portfolio-8.jpg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="portfolio-info">
+                        <h4>Card 3</h4>
+                        <p>Card</p>
+                        <div class="portfolio-links">
+                          <a
+                            href="../static/assets/img/portfolio/portfolio-8.jpg"
+                            data-gallery="portfolioGallery"
+                            class="portfolio-lightbox"
+                            title="Card 3"
+                            ><i class="bx bx-plus"></i
+                          ></a>
+                          <a
+                            href="portfolio-details.html"
+                            data-gallery="portfolioDetailsGallery"
+                            data-glightbox="type: external"
+                            class="portfolio-details-lightbox"
+                            title="Portfolio Details"
+                            ><i class="bx bx-link"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                      <img
+                        src="../static/assets/img/portfolio/portfolio-9.jpg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="portfolio-info">
+                        <h4>Web 3</h4>
+                        <p>Web</p>
+                        <div class="portfolio-links">
+                          <a
+                            href="../static/assets/img/portfolio/portfolio-9.jpg"
+                            data-gallery="portfolioGallery"
+                            class="portfolio-lightbox"
+                            title="Web 3"
+                            ><i class="bx bx-plus"></i
+                          ></a>
+                          <a
+                            href="portfolio-details.html"
+                            data-gallery="portfolioDetailsGallery"
+                            data-glightbox="type: external"
+                            class="portfolio-details-lightbox"
+                            title="Portfolio Details"
+                            ><i class="bx bx-link"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
       <div class="page-header d-flex align-items-center">
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
