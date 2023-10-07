@@ -1332,8 +1332,16 @@ h6 {
   color: var(--color-primary);
 }
 
-::placeholder{
-  color: #ffffff;
+::-webkit-input-placeholder { /* Edge */
+  color: red;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: red;
+}
+
+input::placeholder {
+  color: red;
 }
 
 .resume .resume-title {
@@ -1393,4 +1401,3 @@ h6 {
   background: #18d26e;
   border: 2px solid #18d26e;
 }
-
